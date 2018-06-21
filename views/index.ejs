@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Index_ejs</title>
+	<link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+</head>
+<body>
+	<header class="header"><!--頁首-->
+	
+		<div>
+			<nav class="nav" id = "menu">
+				<a href="/signin" class="nav-link" id = "login">登入</a>
+				<a href="/signup" class="nav-link"id = "signup">註冊</a>
+			</nav>
+		</div>
+		
+			<!-- logo -->
+			<div class="logo"><a href="/">Shopping Mall</a></div>	
+	</header>
+	
+			<div class="content">
+			
+				<div class="table">
+					
+						<% for(var i =0; i<data.length;i++){ %>
+				<table >
+						<tr>
+							<td><img src=<%= '/img/'+data[i].id+'/pic.png' %> width = "240px" height = "200px"></td>				
+　				 		</tr>
+						
+						<tr>
+							<td><font size="6"><a href="/detail?id=<%= data[i].id %>"><%= data[i].name %></td>
+　				 		</tr>
+
+						<tr>
+							<td><%= data[i].type %></td>
+　				 		</tr>
+
+						<% }; %>
+					</table>
+					
+				</div>
+<div class="clear"></div>
+			</div>
+	
+	<footer class="footer"><!--頁尾-->
+		<div class="container">
+			<small>M10511004</small>
+			<small class="pull-right">Copyright © 2018 </small>
+		</div>
+	</footer>
+	
+</body>
+<script src="js/index.js"></script>
+</html>

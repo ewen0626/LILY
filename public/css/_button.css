@@ -1,0 +1,62 @@
+/*一般*/
+.button {
+	color: #3E3E3E;
+	font-weight: 300;
+	background-color: #E2E2E2;
+	padding: 4px 10px;
+	display: inline-block;
+	border: none;
+}
+
+.button:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+/*綠色*/
+.button-green {
+	background-color: #21ba45;
+	color: #fff;
+}
+
+.button-green:hover {
+	background-color: #16ab39;
+	color: #fff;
+}
+
+/*藍色*/
+.button-blue {
+	background-color: #2196F3;
+	color: #fff;
+}
+
+.button-blue:hover {
+	background-color: #0c7cd5;
+	color: #fff;
+}
+
+/*紅色*/
+.button-red {
+	background-color: #db2828;
+	color: #fff;
+}
+
+.button-red:hover {
+	background-color: #d01919;
+	color: #fff;
+}
+
+/*暗色*/
+.button-dark {
+	background-color: #010101;
+	color: #fff;
+}
+
+.button-dark:hover {
+	background-color: #3C3C3C;
+	color: #fff;
+}
+
+
+
+

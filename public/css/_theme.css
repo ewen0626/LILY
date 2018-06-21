@@ -1,0 +1,171 @@
+
+.site-header {
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: relative;
+	z-index: 99;
+}
+
+.site-logo {
+	text-transform: uppercase;
+	font-weight: 800;
+	float: left;
+}
+
+@media (max-width: 992px) {
+	.site-menu {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.site-header-toggle {
+		display: none;
+	}
+}
+
+.site-logo,
+.site-header-toggle {
+	padding: 20px 10px;
+}
+
+.site-banner img {
+	margin-top: -140px;
+}
+
+.site-footer {
+	position: relative;
+	z-index: 1;
+}
+
+
+.site-main {
+	position: relative;
+	z-index: 1;
+}
+
+
+/*banner*/
+.site-banner {
+	height: 600px;
+	height: 100vh;
+	position: relative;
+}
+
+@media (max-width: 992px) {
+	.site-banner{
+		height: 500px;
+	}
+}
+
+.site-banner-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	overflow: hidden;
+	background: url('../images/1.jpeg') center center no-repeat;
+	background-size: cover;
+}
+
+.site-banner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 80%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+}
+
+.site-banner-content .title {
+	text-transform: uppercase;
+}
+
+/*site-banner-form*/
+.site-banner-form {
+	position: absolute;
+	background-color: rgba(0,0,0,.3);
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 30px 0
+}
+
+.site-banner-form .button {
+	display: block;
+	width: 100%;
+}
+
+.site-banner-form .container {
+	max-width: 800px;
+}
+
+/*menu*/
+.site-menu .nav-link {
+	margin: 20px 10px;
+	padding: 4px 10px;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+.site-menu .nav-link.become-btn {
+	border: 2px solid #fff;
+}
+
+.site-menu .nav-link.become-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/*section*/
+.section-header {
+	padding: 30px 0 20px 0
+}
+
+.section-title {
+	font-size: 36px;
+	font-weight: 800;
+}
+
+/*card*/
+.card-grid .card{
+	max-height: 300px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.card-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)
+}
+
+.site-footer {
+	margin-top: 60px;
+	padding: 40px 0;
+	background-color: #404344;
+}
+
+@media (max-width: 992px) {
+	.site-footer {
+		display: none;
+	}
+}
+
+.site-footer .nav-link {
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 13px;
+}
+
+
+
+
+
+
+

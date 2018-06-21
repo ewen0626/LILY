@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Admin_ejs</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/test.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	  <![endif]-->
+</head>
+<body>
+	<header class="header"><!--頁首-->
+	
+		<div>
+			<nav class="nav" id = "menu">
+				<a href="/addad" class="nav-link" id = "login">新增廣告</a>
+				<a href="/additem" class="nav-link" id = "login">新增商品</a>
+				<a href="/logout" class="nav-link"id = "signup">登出</a>
+			</nav>
+		</div>
+		
+			<!-- logo -->
+			<div class="logo"><a href="/">Shopping Mall</a></div>	
+	</header>
+	
+	
+
+	<div class="site-main">
+		<div class="container site-main-inner">
+			<div class="content">
+			<div class="title">廣告管理</div>
+			<table border="1" style="width: 80%">
+					<tr>
+						<th>功能</th>
+						<th>品名</th> 
+						<th>X</th>
+						<th>Y</th>
+						<th>價格</th>
+						<th>預覽</th>
+					</tr>
+					<% for(var i =0; i<addata.length;i++){ %>		
+						<td>
+							<a name="edit" href="<%= '/editad?id='+ addata[i].id %>">編輯</a>
+							<a name="remove" href="<%= '/removead?id='+ addata[i].id %>">刪除</a>
+						</td>
+						<td><%= addata[i].name %></td>
+						<td><%= addata[i].local_x %> </td>
+						<td><%= addata[i].local_y %></td>
+						<td><%= addata[i].price %> </td>
+						<td><img src=<%= '/img/'+addata[i].id+'/pic.png' %> width = "40px" height = "40px"></td>
+　				 	</tr>
+					<% }; %>
+			</table>
+			</div>
+			<br>
+			<div class="title">商品管理</div>
+
+				<table border="1" style="width: 80%">
+					<tr>
+						<th>功能</th>
+						<th>品名</th> 
+						<th>類別</th>
+						<th>庫存</th>
+						<th>價格</th>
+						<th>備註</th>
+						<th>預覽</th>
+					</tr>
+					<tr>
+					<% for(var i =0; i<data.length;i++){ %>		
+						<td>
+							<a name="edit" href="<%= '/edititem?id='+ data[i].id %>">編輯</a>
+							<a name="remove" href="<%= '/removeitem?id='+ data[i].id %>">刪除</a>
+						</td>
+						<td><a href="/detail?id=<%= data[i].id %>"><%= data[i].name %></td>
+						<td><%= data[i].type %></td>
+						<td><%= data[i].number %> </td>
+						<td><%= data[i].price %></td>
+						<td><%= data[i].note %> </td>
+						<td><img src=<%= '/img/'+data[i].id+'/pic.png' %> width = "40px" height = "40px"></td>
+　				 	</tr>
+					<% }; %>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+	
+	
+	<footer class="footer"><!--頁尾-->
+		<div class="container">
+			<small>M10511004</small>
+			<small class="pull-right">Copyright © 2018 </small>
+		</div>
+	</footer>
+</body>
+<script src="js/admin.js"></script>
+</html>

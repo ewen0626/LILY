@@ -1,0 +1,72 @@
+/*container*/
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.form {
+	margin-top:15%;
+}
+.form-additem {
+	margin-top:auto;
+}
+
+.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+@media (min-width: 768px ) {
+	.container {
+		width: 720px
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 920px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1100px;
+	}
+}
+
+
+/*content & sidebar*/
+.content,
+.sidebar {
+	height: 650px;
+}
+
+@media (min-width: 768px ) {
+
+	.content {
+		width: 68%;
+		float: left;
+	}
+
+	.sidebar {
+		width: 32%;
+		float: left;
+	}
+
+	.sidebar ~ .sidebar {
+		float: right
+	}
+
+	.sidebar + .content {
+		width: 36%;
+	}
+
+	.content:last-child{
+		width: 68%
+	}
+
+	.content:only-child{
+		width: 100%
+	}
+}

@@ -1,0 +1,19 @@
+.nav {
+	/*預設重整*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	
+}
+
+.nav-link {
+	/*基本內距*/
+	padding: 5px;
+    margin: 0px;
+  
+    /*修改類型*/
+	display: inline-block
+	
+}
+

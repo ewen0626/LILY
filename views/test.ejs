@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <h3><%= title %></h3>
+	
+		<a href="/signin">登入</a>
+		<a href="/signup">註冊</a>	
+        <% for(var i =0; i<data.length;i++){ %>
+		<div class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="img-fluid" src=<%= '/img/'+data[i].id+'/pic.png' %> alt="">
+						<h2 class="card-center text-white title">Bangkok</h2>
+					</div>
+				</div>
+
+			</div>
+        <% }; %>
+	
+  </body>
+</html>
+

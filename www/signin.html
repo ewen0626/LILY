@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Signin_html</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/signin.js"></script>
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	  <![endif]-->
+</head>
+<body>
+	<header class="header"><!--頁首-->
+	
+		<div>
+			<nav class="nav" id = "menu">
+				<a href="/signin" class="nav-link" id = "login">登入</a>
+				<a href="/signup" class="nav-link"id = "signup">註冊</a>
+			</nav>
+		</div>
+		
+			<!-- logo -->
+			<div class="logo"><a href="/">Shopping Mall</a></div>	
+	</header>
+	
+	
+
+
+		<div class="container site-main-inner">
+			<div class="content">
+			<div class="title">會員登入</div>
+				<div class="form"align="center"><form action="/signin" method="post"  onsubmit="return post(this);" >
+					<div class="font">帳號:<input type="text" name="account" placeholder="請輸入帳號"><br></div>
+					<div class="font">密碼:<input type="password" name="password"placeholder="請輸入密碼"><br></div>
+					<input type="submit" value="登入">
+				</form></div>
+			</div>
+		</div>
+
+	
+	
+	
+	
+	<footer class="footer"><!--頁尾-->
+		<div class="container">
+			<small>M10511004</small>
+			<small class="pull-right">Copyright © 2018 </small>
+		</div>
+	</footer>
+
+</body>
+</html>

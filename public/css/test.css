@@ -1,0 +1,123 @@
+@import url(_global.css);
+
+
+*{
+	font-family: 
+		Arial,
+		微軟正黑體,
+		sans-serif;
+}
+
+
+
+
+.header {
+	font-size: 30px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 99;
+	background-color: #0DD5C2; 
+	
+
+}
+
+.nav {
+	/*預設重整*/
+	background-color: #47E9DD; /*綠*/
+	text-align:right;
+	font-size: 20px;
+	font-weight:700;
+	
+	
+}
+
+.nav-link {
+	/*基本內距*/
+	padding: 5px;
+    margin: 0px;
+	position:relative; 
+	right:20px;
+
+  
+    /*修改類型*/
+	display: inline-block;
+	 
+	
+}
+
+
+.logo {
+	
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height:100px;
+	position:relative; 
+	left:20px; 
+	
+}
+
+
+
+.content {
+	margin: 150px 0;
+	
+	width: 100%;
+	background-color: #FFF;/*粉*/
+
+	
+	
+}
+.container:after{
+content: '';
+display: block;
+clear: both;
+}
+
+.clear{
+clear: both;
+}
+
+.container{
+width: 1010px;
+margin: 0 auto;
+
+overflow:hidden;
+}
+
+table {
+	position: relative;
+	left:10%;
+	width: 20%;
+	table-layout:fixed;
+	word-break: break-all;
+	margin-right:10px;
+	margin-bottom:50px;
+	text-align:center;	
+	float:left;
+}
+form{
+	background-color: #FFFFE0;
+
+}
+
+
+.footer {
+
+	background-color: #0ADDD8; /*黃*/
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	text-align:center;
+	
+}
+
+
+.title{
+	text-align:center;
+	font-size: 35px;
+	font-weight:700;
+	color: #4CAF50;
+	margin: 20px 10px;
+}

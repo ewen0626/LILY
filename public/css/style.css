@@ -1,0 +1,81 @@
+@import url(_global.css);
+@import url(_layout.css);
+@import url(_nav.css);
+@import url(_helper.css);
+
+
+*{
+	
+	font-family: 
+		Arial,
+		微軟正黑體,sans-serif;
+}
+
+
+.site-header {
+	font-size: 30px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 99;
+	background-color: #ff6347 /*紅*/
+}
+
+.site-logo {
+	
+	text-transform: uppercase;
+	font-weight: 800;
+	float: left;
+	background-color: #7fffd4 /*綠*/
+}
+
+@media (max-width: 992px) {
+	.site-menu {
+		white-space: nowrap;
+		width: 100%;
+		overflow: auto;
+		/*background-color: #4682b4 /*藍*/
+	}
+}
+
+.site-logo,
+.site-header-toggle,
+.site-menu .nav-link {
+	padding: 5px 10px;
+}
+
+.site-banner img {
+	margin-top: -140px;
+}
+
+.site-footer {
+	position: relative;
+	z-index: 1;
+	background-color: #fafad2 /*黃*/
+}
+
+@media (min-width: 768px) {
+	.site-footer .nav {
+		width: 25%;
+		float: left;
+	}
+}
+
+.site-main {
+	position: relative;
+	z-index: 1;
+}
+
+.content {
+	margin: 70px 0;
+	width: 100%;
+	background-color: #ff69b4 /*粉*/
+}
+
+.site-main-inner::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+

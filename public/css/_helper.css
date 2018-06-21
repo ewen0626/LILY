@@ -1,0 +1,22 @@
+/*浮動方向*/
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+/*黑底白字*/
+.dark-bg {
+	background-color: #000;
+	color: #fff;
+}
+
+.dark-bg a{
+	color: #fff;
+}
+
+.dark-bg a:hover{
+	color: rgba(255,255,255,.6);
+}

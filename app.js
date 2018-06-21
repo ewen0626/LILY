@@ -406,6 +406,24 @@ app.get('/admin',function(req,res){
 			}
 		});	
 });
+app.get('/getuser',function(req,res){  
+		var user = req.query.user;
+		usersModel.findOne({account:user},function(err,docs){
+			docs=JSON.stringify(docs);
+			if(err){
+				console.log('存取錯誤，請重試。');
+				res.end('存取錯誤，請重試。');
+			}
+			else if (docs == "null"){
+				res.end("No Account");
+				console.log("無此帳號");
+			}else{
+				res.end(docs);
+				console.log(docs);
+			}		
+		});
+});
+
 app.get('/', function (req, res) {
 		itemModel.find({},function(err,docs){// 搜尋是否重複註冊
 			docs=JSON.stringify(docs);
